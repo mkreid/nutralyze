@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   <display-name>Nutralyze</display-name>
-  <!-- Start copy -->
-  <!--Defines Security Constraint -->
-    <security-constraint>
-        <display-name>JSP Demo Constraint</display-name>
-        <web-resource-collection>
-            <web-resource-name>cp</web-resource-name>
-            <description/>
-            <url-pattern>/*</url-pattern>
-        </web-resource-collection>
-        <auth-constraint>
-            <description/>
-            <role-name>employee</role-name>
-        </auth-constraint>
-    </security-constraint>
-<!--Defines Login Config -->
-    <login-config>
-        <auth-method>FORM</auth-method>
-        <realm-name>file</realm-name>
-        <form-login-config>
-            <form-login-page>/login.jsp</form-login-page>
-            <form-error-page>/error.jsp</form-error-page>
-        </form-login-config>
-    </login-config>
-<!--Defines Security Role -->
-    <security-role>
-        <description/>
-        <role-name>employee</role-name>
-    </security-role>
-  <!-- End copy -->
+  <resource-ref>
+ 	<description>Oracle Datasource example</description>
+ 	<res-ref-name>jdbc/myoracle</res-ref-name>
+ 	<res-type>javax.sql.DataSource</res-type>
+ 	<res-auth>Container</res-auth>
+  </resource-ref>
+  
+  
+  <!-- Servlets -->
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+    <servlet-class>Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+    <servlet-class>auth.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

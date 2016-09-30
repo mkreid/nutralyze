@@ -6,6 +6,6 @@
   </head>
   <body>
        <h3>Login Error</h3>   
-       <a href="index.jsp">Click to Login Again</a>     
+       <a href="login.jsp">Click to Login Again</a>     
   </body>
 </html> 

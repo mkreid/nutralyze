@@ -28,7 +28,7 @@
 	
 	return;
 } %>
-Welcome <%= currentUser.getFirstName() + " " + currentUser.getLastName() %> 
+Welcome, <%= currentUser.getFirstName() + " " + currentUser.getLastName() %>!
 <br>
 
 </p>

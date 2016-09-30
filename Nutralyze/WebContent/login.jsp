@@ -7,11 +7,13 @@
 <title>Login Please</title>
 </head>
 <body>
-	<h2>Login Demo using j_security</h2>
-	<form name="loginForm" method="POST" action="j_security_check">
-		<p>Username: <input type="text" name="j_username" size="20"/></p>
-		<p>Password: <input type="password" size="20" name="j_password"/></p>
-		<p> <input type="submit" value="Submit"/> </p>
+	<h2>Welcome to Nutralyze!</h2>
+	<p>Please enter login information:</p>
+	<form name="loginForm" method="POST" action="LoginServlet">
+		<p>Username: <input type="text" name="username" size="20"/></p>
+		<p>Password: <input type="password" size="20" name="password"/></p>
+		<p> <input type="submit" value="Submit"/>
 	</form>
+	<p>Need an account? <a href="register.jsp">Click Here to register!</a>
 </body>
 </html>

@@ -32,18 +32,21 @@ public class Register extends HttpServlet {
 		
 		// load driver for mysql db
 		
-		// create connection to DB
+		// create a new user bean
+		
+		// TODO: check if account exists?
 		
 		// insert into DB
-		out.println("name= "+name);
-		out.println("user= "+ username);
-		out.println("pass= "+ password);
+		out.println("name= "+name + "<BR>");
+		out.println("user= "+ username + "<BR>");
+		out.println("pass= "+ password + "<BR>");
 		
 		// pass back to login site
 		out.println("You are successfully registered!");
+		out.println("<a href=\"login.jsp\">Click here to login</a>");
 		
 		
-		super.doPost(req, resp);
+		
 	}
 	
 	
