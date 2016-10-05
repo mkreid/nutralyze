@@ -1,0 +1,33 @@
+body {
+	background-color: lightgray;
+}
+
+table.nutritional_label {
+	background: white;
+	border: 2px solid black;
+	width: 300px;
+	padding: 0px 10px 0px 10px;
+	border-spacing: 0px;
+}
+
+th.TabTitle {
+	font-size: 16pt;
+	text-align: left;
+}
+
+th.left_align, td.left_align {
+	text-align: left;
+}
+
+th.right_align, td.right_align {
+	text-align: right;
+}
+
+tr.underline td, tr.underline th {
+	border-bottom: 1px solid black;
+}
+
+tr.big_underline td, tr.big_underline th {
+	border-bottom: 3px solid black !important;
+}
+
