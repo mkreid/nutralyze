@@ -28,7 +28,6 @@
 <%-- End navigation section --%>
 <br><br>
 <div> 
-<p>
 <% UserBean currentUser = (UserBean) (session.getAttribute("currentSessionUser")); %> 
 <%-- Make sure user is logged in; if not redirect to login portal! --%>
 <% if (currentUser == null) {
@@ -39,11 +38,15 @@
 	
 	return;
 } %>
-Welcome, <%= currentUser.getFirstName() + " " + currentUser.getLastName() %>!
-<br>
-</p>
 </div>
-
+<p>Currently, there are <b>&lt;x&gt;</b> ingredients in the database.</p>
+<hr>
+<p>What would you like to do?</p>
+<ul>
+	<li><a href="#">Add new ingredient...</a></li>
+	<li><a href="#">Remove ingredient...</a></li>
+	<li><a href="#">View ingredient...</a></li>
+</ul>
 
 
 <div id="footer">

@@ -110,6 +110,10 @@ ul {
 	width: 300px;
 	height: 300px;
 	font-family: 'Open Sans', sans-serif;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid black;
 }
 
 #loginBox h2 {
