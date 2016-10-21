@@ -4,16 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="css/style.css">
 <title>Login Please</title>
 </head>
 <body>
+	<div id="loginBox">
 	<h2>Welcome to Nutralyze!</h2>
 	<p>Please enter login information:</p>
 	<form name="loginForm" method="POST" action="LoginServlet">
-		<p>Username: <input type="text" name="username" size="20"/></p>
-		<p>Password: <input type="password" size="20" name="password"/></p>
-		<p> <input type="submit" value="Submit"/>
+		<input type="text" name="username" placeholder="Username" required="required"/>
+		<input type="password" name="password" placeholder="Password" required="required"/>
+		<button class="btn" type="submit"> Let me in</button>
 	</form>
-	<p>Need an account? <a href="register.jsp">Click Here to register!</a>
+	<p>Need an account? <a href="register.jsp">Click Here to register!</a></p>
+	</div>
 </body>
 </html>
