@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Successful Login!</title>
+<title>Home</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body id = "home">

@@ -1,0 +1,98 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	color: #222;
+	background: #fff;
+}
+body {
+	padding: 10px;
+	font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana, 
+	Geneva, Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+
+}
+
+#nav {
+	margin: 0px;
+	padding: 0px;
+	background: #808259 url(img/nav_bg.jpg) 0 0 repeat-x;
+	float: left;
+	width: 100%;
+	border: 1px solid #42432d;
+	border-width: 1px 0;
+}
+
+#nav a:link,
+#nav a:visited {
+	color: #000;
+	background: #b2b580;
+	padding: 20px 40px 4px 10px;
+	float: left;
+	width: auto;
+	border-right: 1px solid #42432d;
+	text-decoration: none;
+	font: bold 1em/1em Arial, Helvetica, sans-serif;
+	test-transform: uppercase;
+	text-shadow: 2px 2px 2px #555;
+}
+
+#nav a:hover,
+#nav a:focus {
+	color: #fff;
+	background: #727454;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-family: "Verdana", Verdana, sans-serif;
+}
+
+#nav li:first-child a {
+	border-left:1px solid #42432d;
+}
+
+#home #nav-home a,
+#ingredients #nav-ingredients a,
+#recipes #nav-recipes a,
+#lab #nav-lab a,
+#reviews #nav-reviews a,
+#contact #nav-contact a {
+	background:#e35a00;
+	color:#fff;
+	text-shadow:none;
+}
+
+#home #nav-home a:hover,
+#ingredients #nav-ingredients a:hover,
+#recipes #nav-recipes a:hover,
+#lab #nav-lab a:hover,
+#reviews #nav-reviews a:hover,
+#contact #nav-contact a:hover {
+	background:#e35a00;
+}
+#nav a:active {
+	background:#e35a00;
+	color:#fff;
+}
+
+#footer {
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+#footer p {
+	border-top: 1px solid #42432d;
+	background: #fff;
+	<!-- position: fixed; -->
+	bottom: 0;
+	text-align: center;
+	margin: 0 10px 5px 10px;
+}

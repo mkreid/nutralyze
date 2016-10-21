@@ -8,10 +8,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Successful Login!</title>
+<title>Ingredients</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body id = "home">
+<body id = "ingredients">
 <% Calendar cal = Calendar.getInstance(); %>
 <% DateFormat time = new SimpleDateFormat("k:mm a z"); %>
 <% DateFormat date = new SimpleDateFormat("dd-MMM-yyyy"); %>

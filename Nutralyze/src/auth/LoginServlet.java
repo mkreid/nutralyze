@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
 			// set the session up!
 			HttpSession session = req.getSession();
 			session.setAttribute("currentSessionUser", user);
-			resp.sendRedirect("userLogged.jsp"); // logged in page
+			resp.sendRedirect("home.jsp"); // logged in page
 		} else {
 			resp.sendRedirect("error.jsp"); // error page
 		}
